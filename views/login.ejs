@@ -1,0 +1,31 @@
+<%- include('./base/header.ejs') %>
+<div class="container ">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <form action="/login/user" method="POST" class="mt-5 bg-dark-subtle border p-3 rounded-3">
+        <h1 class="text-center">Login</h1>
+        <div>
+          <label class="form-label">Email Id</label>
+          <input type="text" class="form-control" name="email" placeholder="Email Id" required>
+        </div>
+        <div>
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
+        </div>
+        <div class="mb-3 form-check d-flex mt-3">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            <div class="mx-auto">
+                <a href="/registeration">...Register here</a>
+            </div>
+          </div>
+        <input type="submit" value=" LOGIN" class="btn btn-info w-100 mt-3">
+      </form>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+    
+ <%- include('./base/footer.ejs') %>  
+ 

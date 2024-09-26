@@ -1,0 +1,52 @@
+<%- include('./base/header.ejs') %>
+
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="col">
+      <form action="/add/user" method="POST" class="mt-5 bg-dark-subtle border p-3 rounded-3">
+        <h1 class="text-center">REGISTRATION</h1>
+        <div>
+          <label class="form-label">RollNo</label>
+          <input type="text" class="form-control" name="rollno" placeholder="Rollno" required>
+        </div>
+        <div>
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
+        </div>
+        <div>
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
+        </div>
+        <div>
+          <label class="form-label">Email-Id</label>
+          <input type="email" class="form-control" name="email" placeholder="Email-Id" required>
+        </div>
+        <div>
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Password" required>
+        </div>
+        <div>
+          <label class="form-label">Type</label>
+          <select class="form-select" name="usertype" aria-label="Default select 1" required>
+            <option selected value="">Select</option>
+            <option value="1">Admin</option>
+            <option value="2">Student</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label">Aadhar Card No.</label>
+          <input type="text" class="form-control" name="aadharCardNo" placeholder="XXXXXXXXXX">
+        </div>
+        <div>
+          <label class="form-label">Mobile No.</label>
+          <input type="text" class="form-control" name="mobileNo" placeholder="0000000000">
+        </div>
+        <input type="submit" value="REGISTER" class="btn btn-info w-100 mt-3">
+      </form>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+<%- include('./base/footer.ejs') %>
